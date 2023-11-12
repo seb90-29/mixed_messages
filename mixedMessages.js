@@ -26,19 +26,20 @@ const answers = {
     merryAndPippinAnswers: ["Shh. Gandalf's thinkin'.", 'He remembered!', "I'm getting one.", 'Mushrooms!', "I think I've broken something.", "I know you've run out. You smoke too much, Pip.", 
     "Well, that's good news.", "I'm hungry.", 'Not this time.']
 }
-
-for(let question in questions) {
-    let randomAsk = []  
-    let randomQuestion = generateRandomNumber(questions[question].length)
-    randomAsk.push(questions[question][randomQuestion])
-    console.log(randomAsk)
+function getQuestion() {
+    const questionsKey = Object.keys(questions)
+    const randomKeyNumber = generateRandomNumber(questionsKey.length)
+    const searchedKey = questionsKey[randomKeyNumber]
+    let randomQuestionsNumber = generateRandomNumber(questions[searchedKey].length)  
+    const resultQuestion = questions[searchedKey][randomQuestionsNumber]
+    return resultQuestion
 }
 
-for(let sentence in answers) {
-    let randomStatement = [] 
-    let randomSentence = generateRandomNumber(answers[sentence].length)
-    randomStatement.push(answers[sentence][randomSentence])
-    console.log(randomStatement)
+function getAnswer() {
+    const answersKey = Object.keys(answers)
+    const randomKeyNumber = generateRandomNumber(answersKey.length)
+    const searchedKey = answersKey[randomKeyNumber]
+    let randomAnswerNumber = generateRandomNumber(answers[searchedKey].length)
+    const resultAnswer = answers[searchedKey][randomAnswerNumber]
+    return resultAnswer
 }
-
-
