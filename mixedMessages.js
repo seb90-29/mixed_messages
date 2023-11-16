@@ -43,3 +43,15 @@ function getAnswer() {
     const resultAnswer = answers[searchedKey][randomAnswerNumber]
     return resultAnswer
 }
+//console.log(getQuestion())
+//console.log(getAnswer())
+
+const generateMessage = () => {
+  messageContainer.innerHTML = getQuestion();
+}
+
+const generateAnswer = () => {
+  answerContainer.innerHTML = getAnswer();
+}
+
+

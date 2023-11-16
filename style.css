@@ -1,0 +1,20 @@
+h1 {
+  font-size: 50px;
+  color:rgb(184, 11, 51);
+  text-align: center;
+}
+p {
+    font-family: Arial;
+  }
+  
+  h3 {
+    font-family: Franklin Gothic Medium;
+    text-align: center;
+    color: gold;
+    background-color: green;
+    
+  }
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa9%2Fa3%2F02%2Fa9a302157e17b57b2c49e56686a23485.jpg&f=1&nofb=1&ipt=3b13b13b1f804420e8c41ea9d0b4c88e0633d98ba04a356e63f929bcaee2ed97&ipo=images");
+  background-repeat:repeat-y ;
+}
